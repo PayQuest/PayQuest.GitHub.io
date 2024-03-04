@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #311e06;
+            color: #ffffff; 
+        }
+
+        header {
+            background-color: #5c3b0e; 
+            color: #ffffff; 
+            padding: 10px 0;
+            text-align: center; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem; 
+        }
+
+        nav {
+            text-align: center; 
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; 
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: #ffffff; 
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center; 
+        }
+
+        form {
+            background-color: hsl(33, 76%, 43%);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(231, 143, 56, 0.439);
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #ffffff; 
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #8c5524; 
+            color: #ffffff;
+            cursor: pointer; 
+        }
+
+        input[type="submit"] {
+            background-color: #5c3b0e; 
+        }
+
+        .switch {
+            color: #ffffff; 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login / Sign Up</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Checkout / Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="login-form">
+            <h2>Login</h2>
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="login-username" required>
+            
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" required>
+            
+            <input type="submit" value="Login">
+        </form>
+        <span class="switch">Don't have an account? <a href="#" id="signup-link" style="color: #ffffff;">Sign Up</a></span>
+
+        <form id="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <label for="signup-username">Username:</label>
+            <input type="text" id="signup-username" name="signup-username" required>
+            
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="signup-password" required>
+            
+            <input type="submit" value="Sign Up">
+        </form>
+        <span class="switch">Already have an account? <a href="#" id="login-link" style="color: #ffffff;">Login</a></span>
+    </main>
+
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+        const signupLink = document.getElementById('signup-link');
+        const loginLink = document.getElementById('login-link');
+
+        signupLink.addEventListener('click', function() {
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+        });
+
+        loginLink.addEventListener('click', function() {
+            loginForm.style.display = 'block';
+            signupForm.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
