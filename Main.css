@@ -1,4 +1,9 @@
-Body{
+body{
  background-image: url('https://images.unsplash.com/photo-1649598788739-9d33194d724f?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+ background-repeat: no-repeat;
+}
+
+#body1{
+ background-image: url('');
  background-repeat: no-repeat;
 }
