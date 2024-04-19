@@ -20,6 +20,7 @@ from PQ import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', views.home, name="home"),
-    
+    path('', views.home, name="Home"),
+    path('Tavern', views.tavern, name="Tavern"),
+    path('profile', views.profile, name="Profile"),
 ]
