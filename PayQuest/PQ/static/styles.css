@@ -1,4 +1,4 @@
-body{
+#body0{
  background-image: url('https://images.unsplash.com/photo-1649598788739-9d33194d724f?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
  background-repeat: no-repeat;
 }
@@ -6,6 +6,61 @@ body{
 #body1{
  background-image: url('https://assets.housingsnap.com/uploads/paragraph/image/254845/6b48a280a98af587dc7d416f38ba5d0e_watermark.jpg');
  background-repeat: no-repeat;
+
+}
+
+#body3{
+  background-color: black;
+
+
+}
+#block{
+  background-color: brown;
+  position:absolute;
+  width:70%;
+  height:70%;
+  right: 20%;
+  top:10%;
+  text-align: center;
+}
+#block2{
+  background-color: rgb(110, 27, 27);
+  position: absolute;
+  width:68%;
+  height:17%;
+  top:12%;
+  right:21%;
+  text-align: center;
+
+}
+#block3{
+  background-color: rgb(110, 27, 27);
+  position: absolute;
+  width:68%;
+  height:17%;
+  top:28%;
+  right:21%;
+  text-align: center;
+
+}
+#block4{
+  background-color: rgb(110, 27, 27);
+  position: absolute;
+  width:68%;
+  height:17%;
+  top:12%;
+  right:21%;
+  text-align: center;
+
+}
+#block5{
+  background-color: rgb(110, 27, 27);
+  position: absolute;
+  width:12%;
+  height:17%;
+  top:28%;
+  right:21%;
+  text-align: center;
 
 }
 
@@ -108,13 +163,37 @@ body{
   }
 
   #Profile_style{
-    background-color: orange;
+    background-color: rgb(255, 255, 255);
 
 
   }
 
-  #Back:link:visited{
+  #back_button:visited{
     position:absolute;
+    left:3%;
+
+    color:white;
+    text-decoration: none;
+  }
+
+  #back_button:link{
+    position:absolute;
+    color:white;
+    left:3%;
     background-color: black;
     text-decoration: none;
+    padding: 1%;
+    width:5%;
+    text-align: center;
+
+
+  
+  }
+
+  #back_button:hover{
+    background-color:white;
+    display: block;
+    color:black;
+    border-width:3px;
+    border-color:black;
   }

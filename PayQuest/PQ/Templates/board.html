@@ -7,11 +7,17 @@
      <link rel ="styleSheet" href="static/styles.css">
      <meta name="viewport" content="width=device-width, initial-scale=0.50, maximum-scale:0.5,minimum-scale:1.0">
 </head>
-<body>
+<body id="body3">
+    <h1 id="block"></h1>
+    <h1 id="block2"></h1>
+    <h1 id="block3"></h1>
+    <h1 id="block4"></h1>
+    <h1 id="block5"></h1>
     <div class="topnav">
-        <a class = link href="Tavern">Tavern</a>
+        <a id ="back_button" href ="{{request.META.HTTP_REFERER|escape}}">Back</a>
         <a id="profile" href="profile">Profile</a>
-        <a id="profile_name" href="profile.html">Profile</a>
+        <a id="profile_name" href="profile">Profile</a>
     </div>
+
 </body>
 </html>
