@@ -10,10 +10,54 @@
 }
 
 #body3{
-  background-color: black;
+  background-color: rgb(95, 0, 0);
 
 
 }
+#wall{
+
+  background-color: rgb(54, 0, 0);
+  position:absolute;
+  width:20%;
+  height:110%;
+  right:5%;
+  top:-10%;
+  text-align: center;
+}
+
+#wall2{
+
+  background-color: rgb(54, 0, 0);
+  position:absolute;
+  width:15%;
+  height:110%;
+  right:30%;
+  top:-10%;
+  text-align: center;
+}
+
+#wall3{
+
+  background-color: rgb(54, 0, 0);
+  position:absolute;
+  width:20%;
+  height:110%;
+  right:55%;
+  top:-10%;
+  text-align: center;
+}
+
+#wall4{
+
+  background-color: rgb(54, 0, 0);
+  position:absolute;
+  width:15%;
+  height:110%;
+  right:80%;
+  top:-10%;
+  text-align: center;
+}
+
 #block{
   background-color: brown;
   position:absolute;
@@ -27,7 +71,7 @@
   background-color: rgb(110, 27, 27);
   position: absolute;
   width:68%;
-  height:17%;
+  height:14%;
   top:12%;
   right:21%;
   text-align: center;
@@ -37,7 +81,7 @@
   background-color: rgb(110, 27, 27);
   position: absolute;
   width:68%;
-  height:17%;
+  height:14%;
   top:28%;
   right:21%;
   text-align: center;
@@ -47,8 +91,8 @@
   background-color: rgb(110, 27, 27);
   position: absolute;
   width:68%;
-  height:17%;
-  top:12%;
+  height:14%;
+  top:44%;
   right:21%;
   text-align: center;
 
@@ -56,9 +100,9 @@
 #block5{
   background-color: rgb(110, 27, 27);
   position: absolute;
-  width:12%;
-  height:17%;
-  top:28%;
+  width:68%;
+  height:14%;
+  top:60%;
   right:21%;
   text-align: center;
 
