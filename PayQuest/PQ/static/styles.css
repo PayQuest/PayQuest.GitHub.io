@@ -212,6 +212,17 @@
 
   }
 
+  #cube{
+    background-color: rgb(163, 163, 163);
+    position:absolute;
+    width:70%;
+    height:70%;
+    right: 20%;
+    top:10%;
+    text-align: center;
+  }
+  
+
   #back_button:visited{
     position:absolute;
     left:3%;
