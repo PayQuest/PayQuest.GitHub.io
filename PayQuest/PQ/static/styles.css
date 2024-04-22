@@ -106,3 +106,15 @@ body{
     position:absolute;
     text-decoration: none;
   }
+
+  #Profile_style{
+    background-color: orange;
+
+
+  }
+
+  #Back:link:visited{
+    position:absolute;
+    background-color: black;
+    text-decoration: none;
+  }

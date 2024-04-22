@@ -6,13 +6,9 @@
     <title>PayQuest</title>
     <link rel ="styleSheet" href="static/styles.css">
 </head>
-<body>
+<body id="Profile_style">
         <div class="topnav">
-        <a class="active" href="http://127.0.0.1:8000/">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a id="profile" href="profile.html">Profile</a>
-        <a id="profile_name" href="profile.html">Profile</a>
+        <a id ="Back" href ="{{request.META.HTTP_REFERER|escape}}">Back</a>
     </div>
 </body>
 </html>
