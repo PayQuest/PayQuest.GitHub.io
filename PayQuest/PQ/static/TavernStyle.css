@@ -1,0 +1,90 @@
+#body1{
+    background-color:rgb(126, 32, 15);
+
+}
+
+#wall{
+  
+    background-color: rgb(54, 0, 0);
+    position:absolute;
+    width:5%;
+    height:110%;
+    right:5%;
+    top:-10%;
+    text-align: center;
+    transform:rotate(5deg);
+  }
+  
+  #wall2{
+  
+    background-color: rgb(54, 0, 0);
+    position:absolute;
+    width:15%;
+    height:110%;
+    right:30%;
+    top:-10%;
+    text-align: center;
+  }
+  
+  #wall3{
+  
+    background-color: rgb(54, 0, 0);
+    position:absolute;
+    width:20%;
+    height:110%;
+    right:55%;
+    top:-10%;
+    text-align: center;
+  }
+  
+  #wall4{
+  
+    background-color: rgb(54, 0, 0);
+    position:absolute;
+    width:15%;
+    height:110%;
+    right:80%;
+    top:-10%;
+    text-align: center;
+  }
+
+#BB{
+    position:absolute;
+    background-color:#860909;
+    top: 30%;
+    right: 35%;
+    width: 1100px;
+    height: 500px;
+    border-width: 2px;
+    border-radius: 50px 50px 10px 10px;
+    border-color: rgba(255, 0, 0, 0);
+    transform:rotate(5deg);
+    
+}
+
+#board:link, #board:visited{
+    position:absolute;
+    color:rgba(255, 255, 255, 0.116);
+    background-color: rgba(255, 0, 0, 0);
+    text-decoration: none;
+    display:block;
+    top: 30.9%;
+    right: 34.8%;
+    width: 1100px;
+    height: 500px;
+    border-width: 2px;
+    border-radius: 50px 50px 10px 10px;
+    border-color: rgba(255, 0, 0, 0);
+    border-style:solid;
+    text-align: center;
+    font-size: 1000%;
+    transform:rotate(5deg);
+    
+
+  } 
+  #board:hover{
+
+    background-color:rgba(0, 0, 0, 0.26);
+    color:white;
+
+  }

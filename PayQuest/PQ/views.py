@@ -26,3 +26,6 @@ def  susi(request):
 
 def tavern(request):
     return render(request, "tavern.html",{})
+
+def DTTS(request):
+    return render(request,"DTTS.html", {})

@@ -9,104 +9,20 @@
 
 }
 
-#body3{
-  background-color: rgb(95, 0, 0);
+#body4{
 
-
-}
-#wall{
-
-  background-color: rgb(54, 0, 0);
-  position:absolute;
-  width:20%;
-  height:110%;
-  right:5%;
-  top:-10%;
-  text-align: center;
+  background-color: black;
 }
 
-#wall2{
-
-  background-color: rgb(54, 0, 0);
-  position:absolute;
-  width:15%;
-  height:110%;
-  right:30%;
-  top:-10%;
-  text-align: center;
-}
-
-#wall3{
-
-  background-color: rgb(54, 0, 0);
-  position:absolute;
-  width:20%;
-  height:110%;
-  right:55%;
-  top:-10%;
-  text-align: center;
-}
-
-#wall4{
-
-  background-color: rgb(54, 0, 0);
-  position:absolute;
-  width:15%;
-  height:110%;
-  right:80%;
-  top:-10%;
-  text-align: center;
-}
-
-#block{
-  background-color: brown;
-  position:absolute;
-  width:70%;
-  height:70%;
-  right: 20%;
-  top:10%;
-  text-align: center;
-}
-#block2{
-  background-color: rgb(110, 27, 27);
+#DTTST{
+  background-color: white;
   position: absolute;
-  width:68%;
-  height:14%;
-  top:12%;
-  right:21%;
-  text-align: center;
+  top: 20%;
+  right: 5%;
+  font-size: 1000%;
 
 }
-#block3{
-  background-color: rgb(110, 27, 27);
-  position: absolute;
-  width:68%;
-  height:14%;
-  top:28%;
-  right:21%;
-  text-align: center;
 
-}
-#block4{
-  background-color: rgb(110, 27, 27);
-  position: absolute;
-  width:68%;
-  height:14%;
-  top:44%;
-  right:21%;
-  text-align: center;
-
-}
-#block5{
-  background-color: rgb(110, 27, 27);
-  position: absolute;
-  width:68%;
-  height:14%;
-  top:60%;
-  right:21%;
-  text-align: center;
-
-}
 
 .container {
     position: relative;
@@ -157,32 +73,6 @@
 
   }
 
-  #board:link, #board:visited{
-    position:absolute;
-    color:rgba(255, 255, 255, 0.116);
-    background-color: rgba(255, 0, 0, 0);
-    text-decoration: none;
-    display:block;
-    top: 300px;
-    right: 700px;
-    width: 1100px;
-    height: 500px;
-    border-width: 2px;
-    border-radius: 0px 0px 0px 0px;
-    border-color: rgba(255, 0, 0, 0);
-    border-style:solid;
-    text-align: center;
-    font-size: 150px;
-    transform:rotate(5deg);
-    
-
-  } 
-  #board:hover{
-
-    background-color:rgba(0, 0, 0, 0.26);
-    color:white;
-
-  }
 
   #profile{
     position:absolute;
