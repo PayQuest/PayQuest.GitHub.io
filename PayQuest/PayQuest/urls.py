@@ -25,5 +25,6 @@ urlpatterns = [
     path('profile', views.profile, name="Profile"),
     path('board', views.board,name="board"),
     path('contact', views.contact,name="Contact"),
-    path('DDTS', views.DTTS, name="DTTS")
+    path('DDTS', views.DTTS, name="DTTS"),
+    path('request', views.request,name="Request"),
 ]

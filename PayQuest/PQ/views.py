@@ -29,3 +29,6 @@ def tavern(request):
 
 def DTTS(request):
     return render(request,"DTTS.html", {})
+
+def request(request):
+    return render(request,"request.html", {})
