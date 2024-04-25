@@ -1,0 +1,61 @@
+#cube{
+    background-color: rgb(163, 163, 163);
+    position:absolute;
+    width:70%;
+    height:70%;
+    right: 20%;
+    top:10%;
+    text-align: center;
+  }
+
+  #cube{
+    background-color: rgb(163, 163, 163);
+    position:absolute;
+    width:70%;
+    height:70%;
+    right: 20%;
+    top:10%;
+    text-align: center;
+  }
+
+  #cube2{
+    background-color: rgb(201, 201, 201);
+    position:absolute;
+    width:70%;
+    height:70%;
+    right: 20%;
+    top:10%;
+    text-align: center;
+  }
+  
+
+  #back_button:visited{
+    position:absolute;
+    left:3%;
+
+    color:white;
+    text-decoration: none;
+  }
+
+  #back_button:link{
+    position:absolute;
+    color:white;
+    left:3%;
+    background-color: black;
+    text-decoration: none;
+    padding: 1%;
+    width:5%;
+    text-align: center;
+
+
+  
+  }
+
+  #back_button:hover{
+    background-color:white;
+    display: block;
+    color:black;
+    border-width:3px;
+    bo
+
+  }
