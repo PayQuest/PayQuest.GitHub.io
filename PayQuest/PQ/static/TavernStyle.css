@@ -23,7 +23,7 @@
   color:white;
   position:absolute;
   left: 6%;
-  height:20%;
+  height:15%;
   width:9%;
   text-align: center;
   top:45%
@@ -38,107 +38,6 @@
 
 
 }
-
-#arrow-left {
-  width: 50%; 
-  height: 50%; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  
-  border-right:10px solid blue; 
-}
-
-#wall{
-  
-    background-color: rgb(54, 0, 0);
-    position:absolute;
-    width:10%;
-    height:110%;
-    right:5%;
-    top:-10%;
-    text-align: center;
-
-  }
-  
-  #wall2{
-  
-    background-color: rgb(54, 0, 0);
-    position:absolute;
-    width:10%;
-    height:110%;
-    right:20%;
-    top:-10%;
-    text-align: center;
-
-  }
-  
-  #wall3{
-  
-    background-color: rgb(54, 0, 0);
-    position:absolute;
-    width:10%;
-    height:110%;
-    right:35%;
-    top:-10%;
-    text-align: center;
-
-  }
-  
-  #wall4{
-  
-    background-color: rgb(54, 0, 0);
-    position:absolute;
-    width:10%;
-    height:110%;
-    right:50%;
-    top:-10%;
-    text-align: center;
-
-  }
-
-  #wall5{
-  
-    background-color: rgb(54, 0, 0);
-    position:absolute;
-    width:10%;
-    height:110%;
-    right:65%;
-    top:-10%;
-    text-align: center;
-
-  }
-
-  #wall6{
-  
-    background-color: rgb(54, 0, 0);
-    position:absolute;
-    width:10%;
-    height:110%;
-    right:80%;
-    top:-10%;
-    text-align: center;
-
-  }
-
-  #wall7{
-  
-    background-color: rgb(54, 0, 0);
-    position:absolute;
-    width:10%;
-    height:110%;
-    right:95%;
-    top:-10%;
-    text-align: center;
-
-  }
-
-  
-
-
-
-
-
-
 
 #BB2{
     position:absolute;
@@ -158,20 +57,19 @@
 #board:link, #board:visited{
   
     position:absolute;
-    color:rgba(255, 255, 255, 0.116);
+    color:rgb(255, 255, 255);
     background-color: rgba(255, 0, 0, 0);
     text-decoration: none;
     display:block;
-    top: 30.9%;
-    right: 34.8%;
-    width: 50%;
-    height: 50%;
+    top: 48%;
+    right: 60%;
+    width: 15%;
+    height: 10%;
     border-width: 2px;
-    border-radius: 25% 25% 5% 5%;
     border-color: rgba(255, 0, 0, 0);
     border-style:solid;
     text-align: center;
-    font-size: 1000%;
+    font-size: 100%;
     margin-bottom: 60%;
   
 
@@ -180,7 +78,7 @@
   } 
   #board:hover{
 
-    background-color:rgba(0, 0, 0, 0.26);
+    background-color:rgba(0, 0, 0, 0.568);
     color:white;
 
   }
@@ -214,9 +112,3 @@
 
 
 
-  #PFPD{
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-
-
-  }

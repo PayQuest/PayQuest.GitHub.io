@@ -273,5 +273,22 @@
   
   }
   
+  #profilePicture{
+
+    position: absolute;
+    top: 22.5%;
+    right:65%;
+    height:50%;
+    width:20%;
+    
+}
  
+#profilePicture{
+
+  position: absolute;
+  top: 22.5%;
+  right:65%;
+  height:50%;
+  width:20%;
   
+}
