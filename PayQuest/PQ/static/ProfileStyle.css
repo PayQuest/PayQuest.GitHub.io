@@ -24,8 +24,18 @@
     position:absolute;
     width:20%;
     height:50%;
-    right:15%;
-    top:15%;
+    right:65%;
+    top:20%;
+    text-align: center;
+  }
+
+  #cube4{
+    background-color: rgb(124, 124, 124);
+    position:absolute;
+    width:20%;
+    height:30%;
+    right:25%;
+    top:20%;
     text-align: center;
   }
 
