@@ -195,6 +195,8 @@
     text-align: center;
     color:rgba(250, 235, 215, 0);
     background-repeat: no-repeat;
+    border-style: hidden;
+    border-radius: 25%;
     
 
   
