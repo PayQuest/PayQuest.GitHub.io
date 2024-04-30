@@ -17,14 +17,31 @@
     <h1 id="cube2"></h1>
     <h1 id="cube3"></h1>
     <h1 id="cube4"></h1>
-    <input type="file" id="Pfpimg" >
-    <button onclick="storeImage()">Save Image</button>
+
   
     <img id="profilePicture" src="#" alt="Profile Picture">
  
 
+    <input type="file" id="imageInput" accept="image/*">
+    <button id ="SaveImage" onclick="storeImage()">Save Image</button>
+
 <script>
-    document.getElementById('Pfpimg').addEventListener('change', function() {
+    function storeImage() {
+        var input = document.getElementById('imageInput');
+        var file = input.files[0];
+        var reader = new FileReader();
+        reader.onload = function(event) {
+            var imageData = event.target.result;
+            localStorage.setItem('imageData', imageData);
+            console.log('Image stored in local storage.');
+        };
+        reader.readAsDataURL(file);
+    }
+
+</script>
+
+<script>
+    document.getElementById('imageInput').addEventListener('change', function() {
         const file = this.files[0]; // Get the uploaded file
         const reader = new FileReader();
 
@@ -45,22 +62,7 @@
 </script>
 
 
-<input type="file" id="imageInput" accept="image/*">
-<button onclick="storeImage()">Save Image</button>
 
-<script>
-    function storeImage() {
-        var input = document.getElementById('imageInput');
-        var file = input.files[0];
-        var reader = new FileReader();
-        reader.onload = function(event) {
-            var imageData = event.target.result;
-            localStorage.setItem('imageData', imageData);
-            console.log('Image stored in local storage.');
-        };
-        reader.readAsDataURL(file);
-    }
-</script>
     
 
 </body>

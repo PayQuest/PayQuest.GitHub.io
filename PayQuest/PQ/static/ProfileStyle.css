@@ -83,12 +83,20 @@
     
 }
 
-#Pfpimg{
+#imageInput{
     position: absolute;
     top:75%;
     right:65%;
 
 
+
+
+}
+
+#SaveImage{
+  position: absolute;
+  left:15%;
+  top: 75%;
 
 
 }
