@@ -12,14 +12,16 @@
         <a id="contact" href="contact">Contact</a>
     </div>
 
+
     <h1 id="cube"></h1>
     <h1 id="cube2"></h1>
     <h1 id="cube3"></h1>
     <h1 id="cube4"></h1>
-    <input type="file" id="Pfpimg">
-
-
+    <input type="file" id="Pfpimg" >
+    <button onclick="storeImage()">Save Image</button>
+  
     <img id="profilePicture" src="#" alt="Profile Picture">
+ 
 
 <script>
     document.getElementById('Pfpimg').addEventListener('change', function() {
@@ -42,7 +44,25 @@
     }
 </script>
 
+
+<input type="file" id="imageInput" accept="image/*">
+<button onclick="storeImage()">Save Image</button>
+
+<script>
+    function storeImage() {
+        var input = document.getElementById('imageInput');
+        var file = input.files[0];
+        var reader = new FileReader();
+        reader.onload = function(event) {
+            var imageData = event.target.result;
+            localStorage.setItem('imageData', imageData);
+            console.log('Image stored in local storage.');
+        };
+        reader.readAsDataURL(file);
+    }
+</script>
     
 
 </body>
 </html>
+

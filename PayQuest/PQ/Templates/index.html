@@ -16,9 +16,19 @@
         <a id="profile_name" href="profile">Profile</a>
     </div>
 
-    <img id="profilePicture" src="#" alt="Profile Picture">
+    <img id="imageDisplay" src="" alt="Stored Image">
 
-{include 'profile'}
+    <script>
+        window.onload = function() {
+            var imageData = localStorage.getItem('imageData');
+            if (imageData) {
+                var imageDisplay = document.getElementById('imageDisplay');
+                imageDisplay.src = imageData;
+            } else {
+                console.log('No image found in local storage.');
+            }
+        };
+    </script>
 
 
 </body>
