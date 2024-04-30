@@ -19,29 +19,10 @@
     <h1 id="wall6"></h1>
     <h1 id="wall7"></h1>
     <img id ="TavernPng" src="static/images/Tavern.png" alt="Tavern PNG">
-    <img id="profilePicture" src="#" alt="Profile Picture">
 
 
-    <script>
-        document.getElementById('Pfpimg').addEventListener('change', function() {
-            const file = this.files[0]; // Get the uploaded file
-            const reader = new FileReader();
-    
-            reader.onload = function(event) {
-                const imageUrl = event.target.result; // Get the base64 encoded image data
-                localStorage.setItem('profilePicture', imageUrl); // Save the image data to local storage
-                document.getElementById('profilePicture').src = imageUrl; // Display the image on the page
-            };
-    
-            reader.readAsDataURL(file); // Read the uploaded file as a data URL
-        });
-    
-        // Later, when you want to retrieve the profile picture
-        let pfp = localStorage.getItem('profilePicture');
-        if (pfp) {
-            document.getElementById('profilePicture').src = pfp; // Display the image on the page
-        }
-    </script>
+
+
 
 
 
@@ -53,15 +34,24 @@
         <a id="HOME" class="active" href="http://127.0.0.1:8000/">Home</a>
         <a id="board" href="board">Quest Board</a>
         <a href="contact">Contact</a>
-        <a id="profile" href="profile">Profile</a>
-        <a id="profile_name" href="profile">Profile</a>
+        <a id="profile" href="profile"><img id="imageDisplay" src="" alt="Stored Image"></a>
         <a id="arrow-left" href="http://127.0.0.1:8000/"></a>
         <a id="Request" href="request">Request</a>
     </div>
 
 <h1 id="PFPD"></h1>
 
-
+<script>
+    window.onload = function() {
+        var imageData = localStorage.getItem('imageData');
+        if (imageData) {
+            var imageDisplay = document.getElementById('imageDisplay');
+            imageDisplay.src = imageData;
+        } else {
+            console.log('No image found in local storage.');
+        }
+    };
+</script>
 
 </body>
 </html>
