@@ -25,6 +25,18 @@
     <input type="file" id="imageInput" accept="image/*">
     <button id ="SaveImage" onclick="storeImage()">Save Image</button>
 
+    <textarea id="userinfo" rows="10" cols="40" name="User Info" spellcheck="true">
+    </textarea>
+    <button onclick="saveLocally()">Save Locally</button>
+    <script>
+        function saveLocally() {
+            var content = document.getElementById("userinfo").value;
+            localStorage.setItem("userContent", content);
+            alert("Content saved locally!");
+            
+        }
+    </script>
+
 <script>
     function storeImage() {
         var input = document.getElementById('imageInput');
