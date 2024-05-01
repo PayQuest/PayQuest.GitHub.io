@@ -2,34 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
     <title>PayQuest</title>
      <link rel ="styleSheet" href="static/styles.css">
-     <meta name="viewport" content="width=device-width, initial-scale=0.50, maximum-scale:0.5,minimum-scale:1.0">
+
      
 </head>
 <body id="body0">
+    <div id="sizebox">
         <div class="topnav">
         <a class = link href="Tavern">Tavern</a>
         <a href="contact">Contact</a>
         <a id="profile" href="profile"><img id="imageDisplay" src="" alt="Stored Image"></a>
+        </div>
  
+    
+
+
+
+        <script>
+            window.onload = function() {
+                var imageData = localStorage.getItem('imageData');
+                if (imageData) {
+                    var imageDisplay = document.getElementById('imageDisplay');
+                    imageDisplay.src = imageData;
+               } else {
+                 console.log('No image found in local storage.');
+               }
+            };
+        </script>
+
     </div>
-
-
-
-    <script>
-        window.onload = function() {
-            var imageData = localStorage.getItem('imageData');
-            if (imageData) {
-                var imageDisplay = document.getElementById('imageDisplay');
-                imageDisplay.src = imageData;
-            } else {
-                console.log('No image found in local storage.');
-            }
-        };
-    </script>
-
-
 </body>
 </html>
