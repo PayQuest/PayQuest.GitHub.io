@@ -1,11 +1,17 @@
 #body0{
  background-image: url('https://images.unsplash.com/photo-1649598788739-9d33194d724f?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
  background-repeat: no-repeat;
+ background-size:100%;
+ background-position-x: 50%;
+ background-position-y: 0%;
 }
 
 #body1{
  background-image: url('https://assets.housingsnap.com/uploads/paragraph/image/254845/6b48a280a98af587dc7d416f38ba5d0e_watermark.jpg');
  background-repeat: no-repeat;
+ background-size:100%;
+ background-position-x: 50%;
+ background-position-y: 25%;
 
 }
 
@@ -32,15 +38,17 @@
   
   .link {
     position: absolute;
-    top: 510px;
-    right: 550px;
+    top: 46.5%;
+    right: 33%;
     color:orange;
     text-decoration: none;
     display: block;
     background-color: black;
-    height: 50px;
-    border-radius: 50px, 50px, 50px,50px;
-    border: 4px solid;
+    height: 6.5%;
+    width:3%;
+    text-align: center;
+    border-radius: 100%, 100%, 100%,100%;
+    border:solid;
     border-color: orange;
     border-bottom-color: black;
   }
@@ -76,9 +84,10 @@
 
   #profile, #imageDisplay, #profilePicture{
     position:absolute;
-
+    top:1%;
     right: 1%;
     width: 30%;
+    height:40%;
     text-align: center;
     color:rgba(250, 235, 215, 0);
     border-style: hidden;
