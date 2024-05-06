@@ -25,20 +25,29 @@
     <input type="file" id="imageInput" accept="image/*">
     <button id ="SaveImage" onclick="storeImage()">Save Image</button>
 
-    <textarea id="userinfo" rows="10" cols="40" name="User Info" spellcheck="true">
-    </textarea>
+    <body onload="loadFromLocalStorage()">
+        <textarea id="userinfo" rows="10" cols="40" name="User Info" spellcheck="true"></textarea>
+        <button id="b2" onclick="saveLocally()">Save</button>
+    
+        <script>
+            function saveLocally() {
+                var input = document.getElementById("userinfo");
+                var textData = input.value;
+                localStorage.setItem('userinfo', textData);
+                console.log('Text stored in local storage.');
+            }
+    
+            function loadFromLocalStorage() {
+                var textData = localStorage.getItem('userinfo');
+                if (textData) {
+                    document.getElementById('userinfo').value = textData;
+                    console.log('Text loaded from local storage.');
+                } else {
+                    console.log('No text data found in local storage.');
+                }
+            }
+        </script>
 
-
-    <button id="b2" onclick="saveLocally()">Save</button>
-    <script>
-        function saveLocally()
-        {
-            var input = document.getElementById("userinfo").value;
-            localStorage.setItem("userContent", content);
-
-        }
-
-    </script>
 
 <script>
     function storeImage() {
