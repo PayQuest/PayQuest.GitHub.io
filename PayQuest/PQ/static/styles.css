@@ -1,20 +1,13 @@
 #body0{
- background-image: url('https://images.unsplash.com/photo-1649598788739-9d33194d724f?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+ background-image: url("/static/images/island.avif");
  background-repeat: no-repeat;
- background-size:auto;
+ background-size:cover;
  background-attachment:fixed;
  background-position-x: 50%;
  background-position-y: 0%;
 }
 
-#body1{
- background-image: url('https://assets.housingsnap.com/uploads/paragraph/image/254845/6b48a280a98af587dc7d416f38ba5d0e_watermark.jpg');
- background-repeat: no-repeat;
- background-size:100%;
- background-position-x: 50%;
- background-position-y: 25%;
 
-}
 
 #sizebox{
   position:relative;
@@ -45,8 +38,9 @@
   }
   
   .link {
+    background-image:url("/static/images/door.avif") ;
     position: fixed;
-    bottom: 41%;
+    bottom: 47%;
     left: 65%;
     color:orange;
     text-decoration: none;
@@ -59,6 +53,8 @@
     border:solid;
     border-color: orange;
     border-bottom-color: black;
+
+    
   }
 
   .link:hover{
