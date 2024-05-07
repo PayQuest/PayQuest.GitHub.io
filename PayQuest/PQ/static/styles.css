@@ -2,6 +2,7 @@
  background-image: url('https://images.unsplash.com/photo-1649598788739-9d33194d724f?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
  background-repeat: no-repeat;
  background-size:auto;
+ background-attachment:fixed;
  background-position-x: 50%;
  background-position-y: 0%;
 }
@@ -39,20 +40,20 @@
 
 .container {
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 400%;
+    height: 300vh;
   }
   
   .link {
-    position: absolute;
-    top: 2800.5%;
-    right: 33%;
+    position: fixed;
+    bottom: 41%;
+    left: 65%;
     color:orange;
     text-decoration: none;
     display: block;
     background-color: black;
-    height: 250%;
-    width:auto;
+    height: 5%;
+    width:2.5%;
     text-align: center;
     border-radius: 100%, 100%, 100%,100%;
     border:solid;
@@ -66,21 +67,6 @@
     border-bottom-color: white;
   }
 
-.active{
-    position:absolute;
-    color:white;
-    background-color: black;
-    right: 0px;
-    bottom: 5px;
-    text-decoration: none;
-    display: block;
-    width: 2000px;
-    height: 50px;
-    text-align: center;
-    
-  
-    
-  }
 
   .active:hover{
     color:black;
