@@ -1,19 +1,34 @@
 #body0{
+ position: absolute;
  background-image: url("/static/images/island.avif");
  background-repeat: no-repeat;
  background-size:cover;
  background-attachment:fixed;
  background-position-x: 50%;
  background-position-y: 0%;
+
+color:rgba(240, 248, 255, 0);
+ right:0%;
+ top:0%;
+ height:5250%;
+ width:100%;
 }
 
+#body2{
+  position: absolute;
+  background-image: url("/static/images/island.avif");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  background-position-x: 50%;
+  background-position-y: 0%;
+ 
+
+ }
 
 
-#sizebox{
-  position:relative;
 
 
-}
 
 
 #body4{
@@ -39,6 +54,10 @@
   
   .link {
     background-image:url("/static/images/door.avif") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+
     position: fixed;
     bottom: 47%;
     left: 65%;
@@ -72,11 +91,11 @@
 
 
   #profile, #imageDisplay, #profilePicture{
-    position:absolute;
+    position:fixed;
     top:1%;
     right: 1%;
-    width: 30%;
-    height:300%;
+    width: 10%;
+    height:20%;
     text-align: center;
     color:rgba(250, 235, 215, 0);
     border-style: hidden;
