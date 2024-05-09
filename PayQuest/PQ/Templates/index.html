@@ -9,32 +9,33 @@
 
      
 </head>
-<div id="sizebox">
  <body id="body2">
-        <h2 id="body0"></h2>
-        <div class="topnav">
-        <a class = link href="Tavern">Tavern</a>
-        <a id="profile" href="profile"><img id="imageDisplay" src="" alt="Stored Image"></a>
-        <a id="login" href="/accounts/login/">Login</a>
-        </div>
-        <a id="contact" href="contact">Contact</a>
+
+    <a id="login" href="/accounts/login/">Login</a>
+
+    <h1 id="contact" href="contact">Contact</h1>
+
+    <a id = "Tavern" href="Tavern">Tavern</a>
+
+    <a id="profile" href="profile"><img id="imageDisplay" src="" alt="Stored Image"></a>
 
 
 
 
-        <script>
-            window.onload = function() {
-                var imageData = localStorage.getItem('imageData');
-                if (imageData) {
-                    var imageDisplay = document.getElementById('imageDisplay');
-                    imageDisplay.src = imageData;
-               } else {
-                 console.log('No image found in local storage.');
-               }
-            };
-        </script>
+
+
+    <script>
+        window.onload = function() {
+            var imageData = localStorage.getItem('imageData');
+            if (imageData) {
+                var imageDisplay = document.getElementById('imageDisplay');
+                imageDisplay.src = imageData;
+            } else {
+                console.log('No image found in local storage.');
+            }
+        };
+    </script>
 
 
  </body>
-</div>
 </html>

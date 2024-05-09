@@ -26,9 +26,21 @@ color:rgba(240, 248, 255, 0);
 
  }
 
+ #login{
+  text-decoration: none;
+  position: absolute;
+  left:1600%;
+  top: 250%;
 
+}
 
+#contact{
+  color:rgba(240, 248, 255, 0);
+  position:relative;
+  right:0% ;
+  top:500%;
 
+}
 
 
 #body4{
@@ -52,8 +64,7 @@ color:rgba(240, 248, 255, 0);
     height: 300vh;
   }
   
-  .link {
-    background-image:url("/static/images/door.avif") ;
+  #Tavern{
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment:fixed;
@@ -76,23 +87,13 @@ color:rgba(240, 248, 255, 0);
     
   }
 
-  .link:hover{
+  #Tavern:hover{
 
     background-color:White;
     border-bottom-color: white;
   }
 
 
-  .active:hover{
-    color:black;
-    background-color: white;
-
-  }
-
-  #login{
-    text-decoration: none;
-
-  }
 
   #profile, #imageDisplay, #profilePicture{
     position:fixed;

@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from PQ import views
-
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +28,7 @@ urlpatterns = [
     path('contact', views.contact,name="Contact"),
     path('DDTS', views.DTTS, name="DTTS"),
     path('request', views.request,name="Request"),
-    path("accounts/", include("django.contrib.auth.urls"))
+    path("accounts/", include("django.contrib.auth.urls")),
+    path("home2", TemplateView.as_view(template_name="home.html"), name="home"),
     
 ]
