@@ -14,8 +14,8 @@ color:rgba(240, 248, 255, 0);
  width:100%;
 }
 
-#body2{
-  position: absolute;
+body{
+
   background-image: url("/static/images/island.avif");
   background-repeat: no-repeat;
   background-size:cover;
@@ -29,18 +29,15 @@ color:rgba(240, 248, 255, 0);
  #login{
   text-decoration: none;
   position: absolute;
-  left:1600%;
-  top: 250%;
+  right:20%;
+  top: 50%;
+  background-color: black;
+  color:white;
+
 
 }
 
-#contact{
-  color:rgba(240, 248, 255, 0);
-  position:relative;
-  right:0% ;
-  top:500%;
 
-}
 
 
 #body4{
