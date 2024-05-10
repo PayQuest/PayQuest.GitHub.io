@@ -29,15 +29,20 @@ body{
  #login{
   text-decoration: none;
   position: absolute;
-  right:20%;
-  top: 50%;
+  right:5%;
+  top: 21.5%;
   background-color: black;
   color:white;
-
+  border:hidden;
+  border-radius:5%;
 
 }
 
+a{
+  scrollbar-gutter: auto;
+  text-overflow: clip;
 
+}
 
 
 #body4{
