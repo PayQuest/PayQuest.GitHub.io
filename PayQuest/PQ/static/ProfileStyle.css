@@ -9,6 +9,39 @@
     text-align: center;
   }
 
+#logout{
+  position:absolute;
+  right:25%;
+  top:23.5%;
+  
+
+}
+
+#PC{
+  position:absolute;
+  left:69%;
+  text-decoration: none;
+  top:21.7%;
+  color:rgb(0, 0, 0);
+  background-color: white;
+
+
+}
+
+#PC:hover{
+  background-color: rgb(189, 189, 189);
+
+
+}
+
+#hi{
+  position:absolute;
+  left:56%;
+  top:18%;
+}
+
+
+
   #cube2{
     background-color: rgb(124, 124, 124);
     position:absolute;

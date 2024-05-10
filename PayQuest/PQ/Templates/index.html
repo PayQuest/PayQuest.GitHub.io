@@ -10,8 +10,13 @@
      
 </head>
  <body>
-
+    {% block content %}
+    {% if user.is_authenticated %}
+    <p></p>
+    {% else %}
     <a id="login" href="/accounts/login/">Login</a>
+    {% endif %}
+    {% endblock %}
 
 
 

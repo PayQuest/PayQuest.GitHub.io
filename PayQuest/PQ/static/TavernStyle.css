@@ -1,9 +1,10 @@
 #body1{
     background-image: url("/static/images/Tavern.png");
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:cover;
+    background-attachment:fixed;
     background-position-x: 50%;
-    background-position-y: 25%;
+    background-position-y: 50%;
     
 
 
