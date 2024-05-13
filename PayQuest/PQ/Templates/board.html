@@ -10,10 +10,12 @@
 </head>
 
 
-<body id="body3">
+<body id="nobody">
+        {% for group in user.groups.all %}
+        {{ group.name }}
+        {% endfor %}
 
-
-
+    <h1 id="backdrop"></h1>
     <h1 id="wall"></h1>
     <h1 id="wall2"></h1>
     <h1 id="wall3"></h1>
@@ -146,11 +148,11 @@
 
     </div>
 
-    <div class="topnav">
+
         <a id ="back_button" href ="{{request.META.HTTP_REFERER|escape}}">Back</a>
         <a id="profile" href="profile"><img id="imageDisplay" src="" alt="Stored Image"></a>
         <a id = "Tav" href="Tavern">Tavern</a>
-    </div>
+
 
     <script>
         window.onload = function() {

@@ -1,18 +1,3 @@
-#body0{
- position: absolute;
- background-image: url("/static/images/island.avif");
- background-repeat: no-repeat;
- background-size:cover;
- background-attachment:fixed;
- background-position-x: 50%;
- background-position-y: 0%;
-
-color:rgba(240, 248, 255, 0);
- right:0%;
- top:0%;
- height:5250%;
- width:100%;
-}
 
 body{
 
@@ -25,7 +10,9 @@ body{
  
 
  }
-
+ * {
+  outline: 1px solid red !important;
+}
  #login{
   text-decoration: none;
   position: absolute;
@@ -38,6 +25,21 @@ body{
 
 }
 
+#nobody{
+  size:100%;
+  background-color: brown;
+  color:brown;
+
+}
+
+#backdrop{
+  background-size:100%;
+  position: absolute;
+  color:brown;
+
+
+}
+
 a{
   scrollbar-gutter: auto;
   text-overflow: clip;
@@ -45,10 +47,6 @@ a{
 }
 
 
-#body4{
-
-  background-color: black;
-}
 
 #DTTST{
   background-color: white;
@@ -67,20 +65,21 @@ a{
   }
   
   #Tavern{
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
+    text-overflow: clip;
 
-    position: fixed;
+    position: absolute;
+
     bottom: 47%;
     left: 65%;
     color:orange;
+
     text-decoration: none;
-    display: block;
     background-color: black;
+
     height: 5%;
     width:2.5%;
     text-align: center;
+
     border-radius: 100%, 100%, 100%,100%;
     border:solid;
     border-color: orange;

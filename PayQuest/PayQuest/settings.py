@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = "Home"
+
+PASSWORD_RESET_TIMEOUT = 21600 # 3600 is an hour, 21600 is 1/4 a day, 43200 is half a day, 86400 is a day.
+
 
 # Application definition
 
