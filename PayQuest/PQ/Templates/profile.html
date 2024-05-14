@@ -56,12 +56,14 @@
 {% block content %}
 {% if user.is_authenticated %}
 <div id="hi" >Hi {{ user.username }}!</div>
-<td>
-{% for group in user.groups.all %}
-{{ group.name }}
-{% endfor %}
-</td>
-<p id="rank">Rank: {{ group.name }}</p>
+<p>Rank :</p>
+<ul id="ul1">
+  {% for group in user.groups.all %}
+    <li>{{ group.name }}</li>
+  {% endfor %}
+</ul>
+<p id="rank">Rank:  </p>
+
 
 <p id="PC"><a id="PC" href="{% url 'password_change' %}">Password Change</a></p>
 <form id="logout"  action="{% url 'logout' %}" method="post">
