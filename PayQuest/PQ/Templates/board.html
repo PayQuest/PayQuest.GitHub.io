@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PayQuest</title>
-     <link rel ="styleSheet" href="static/styles.css">
+
      <meta name="viewport" content="width=device-width, initial-scale=0.50, maximum-scale:0.5,minimum-scale:1.0">
      <link rel = "stylesheet" href ="static/QuestStyle.css">
 </head>
 
 
-<body id="nobody">
-        {% for group in user.groups.all %}
-        {{ group.name }}
-        {% endfor %}
+<body>
+
+
 
     <h1 id="backdrop"></h1>
     <h1 id="wall"></h1>
@@ -165,5 +164,10 @@
             }
         };
     </script>
+
+{% for group in user.groups.all %}
+<p id="rank">{{ group.name }}</p>
+{% endfor %}
+
 </body>
 </html>

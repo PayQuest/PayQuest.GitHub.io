@@ -1,0 +1,32 @@
+@keyframes a1{
+    0%{background-color:blue; bottom:0%; left:10%;}
+    5%{background-color:blue; bottom:5%; left:15%;}
+    10%{background-color:blue; bottom:10%; left:10%;}
+    15%{background-color:blue; bottom:15%; left:15%;}
+    20%{background-color:blue; bottom:20%; left:10%;}
+    25%{background-color:blue; bottom:25%; left:15%;}
+    30%{background-color:blue; bottom:30%; left:10%;}
+    35%{background-color:blue; bottom:35%; left:15%;}
+    40%{background-color:blue; bottom:40%; left:10%;}
+    45%{background-color:blue; bottom:45%; left:15%;}
+    50%{background-color:blue; bottom:50%; left:10%;}
+    55%{background-color:blue; bottom:55%; left:15%;}
+    60%{background-color:blue; bottom:60%; left:10%;}
+    65%{background-color:blue; bottom:65%; left:15%;}
+    70%{background-color:blue; bottom:70%; left:10%;}
+    75%{background-color:blue; bottom:75%; left:15%;}
+    80%{background-color:blue; bottom:80%; left:10%;}
+    85%{background-color:blue; bottom:85%; left:15%;}
+    90%{background-color:blue; bottom:90%; left:10%;}
+    95%{background-color:blue; bottom:95%; left:15%;}
+    100%{background-color:blue; bottom:100%; left:10%;}
+
+}
+#div1{
+    position: absolute;
+    animation-name: a1;
+    border-radius: 100%;
+    animation-duration: 10s;
+
+
+}

@@ -1,10 +1,15 @@
-#body3{
+body{
     background-color: rgb(95, 0, 0);
   
   
   }
 
-
+#rank{
+  position:absolute;
+  right:3%;
+  top:25%;
+  
+}
 
   #wall{
   
