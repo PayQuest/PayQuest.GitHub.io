@@ -5,9 +5,6 @@ body{
   position: fixed;
 
  }
- * {
-  outline: 1px solid red !important;
-}
 
 
 
@@ -87,7 +84,7 @@ a{
     text-align: center;
     font-size: 500%;
     text-decoration: none;
-    
+    -webkit-text-size-adjust: 100%;
     
   }
 
@@ -130,9 +127,8 @@ a{
     position: fixed;
   
    }
-   * {
-    outline: 1px solid red !important;
-  }
+
+
   
   
   
