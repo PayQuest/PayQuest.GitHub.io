@@ -56,7 +56,7 @@
 {% block content %}
 {% if user.is_authenticated %}
 <div id="hi" >Hi {{ user.username }}!</div>
-
+<p>Rank :</p>
 <ul id="ul1">
   {% for group in user.groups.all %}
     <li>{{ group.name }}</li>
