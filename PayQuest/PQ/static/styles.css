@@ -94,30 +94,6 @@ a{
     border-bottom-color: white;
   }
   
-  @keyframes p1{
-    0%{right:0%; top:0%;}
-    10%{right:35%;top:25%;}
-    15%{right:40%; top:45%;}
-    25%{right:80%;top:50%;}
-    30%{right:40%; top:5%}
-    35%{right:50%; top:30%;}
-    40%{right:53%;top:15%;}
-    45%{right:40%; top:45%;}
-    50%{right:20%;top:0%;}
-    55%{right:45%; top:8%}
-    60%{right:90%; top:25%;}
-    70%{right:10%;top:15%;}
-    75%{right:74%; top:45%;}
-    80%{right:80%;top:80%;}
-    85%{right:30%; top:65%}
-    90%{right:85%; top:50%;}
-    92%{right:30%;top:15%;}
-    94%{right:40%; top:25%;}
-    98%{right:20%;top:5%;}
-    100%{right:0%; top:0%}
-  
-  
-  }
 
 
 
@@ -206,8 +182,9 @@ a{
       height:10%;
       width:30%;
       text-align: center;
-      font-size: 500%;
       text-decoration: none;
+      font-size: large;
+      max-block-size: 100%;
       
       
     }
@@ -220,52 +197,64 @@ a{
     
     @keyframes p1{
       0%{right:0%; top:0%;}
-      10%{right:10%;top:15%;}
-      15%{right:40%; top:45%;}
-      25%{right:80%;top:90%;}
-      30%{right:40%; top:5%}
-      35%{right:50%; top:30%;}
-      40%{right:53%;top:15%;}
-      45%{right:40%; top:45%;}
+      10%{right:25%;top:45%;}
+      15%{right:0%; top:80%;}
+      25%{right:30%;top:0%;}
+      30%{right:90%; top:55%}
+      35%{right:60%; top:80%;}
+      40%{right:30%;top:60%;}
+      45%{right:0%; top:80%;}
       50%{right:20%;top:0%;}
-      55%{right:45%; top:8%}
-      60%{right:90%; top:25%;}
-      70%{right:10%;top:15%;}
-      75%{right:74%; top:45%;}
-      80%{right:80%;top:90%;}
-      85%{right:30%; top:45%}
-      90%{right:85%; top:50%;}
-      92%{right:30%;top:15%;}
-      94%{right:40%; top:45%;}
-      98%{right:20%;top:0%;}
-      100%{right:5%; top:8%}
+      55%{right:90%; top:20%}
+      60%{right:55%; top:30%;}
+      70%{right:0%;top:0%;}
+      75%{right:25%; top:45%;}
+      80%{right:0%;top:80%;}
+      85%{right:25%; top:45%}
+      100%{right:0%; top:0%}
     
     
     }
+    #profile, #imageDisplay, #profilePicture{
+      position:fixed;
+      top:1%;
+      right: 1%;
+      width: 10%;
+      height:20%;
+      text-align: center;
+      color:rgba(250, 235, 215, 0);
+      border-style: hidden;
+      border-radius: 100%;
+      animation-name: p1;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function:linear ;
   
+      
+    }
   
     @keyframes an1{
-      0%{background-color:blue; bottom:-7%; left:10%;}
+      0%{background-color:rgb(159, 241, 255); bottom:-7%; left:10%;}
       5%{background-color:rgb(0, 0, 185); bottom:5%; left:15%;}
       10%{background-color:rgb(39, 39, 146); bottom:10%; left:10%;}
-      15%{background-color:rgb(12, 12, 77); bottom:15%; left:15%;}
+      15%{background-color:rgb(176, 239, 255); bottom:15%; left:15%;}
       20%{background-color:rgb(19, 19, 139); bottom:20%; left:10%;}
       25%{background-color:blue; bottom:25%; left:15%;}
-      30%{background-color:rgb(44, 44, 255); bottom:30%; left:10%;}
+      30%{background-color:rgb(151, 225, 255); bottom:30%; left:10%;}
       35%{background-color:rgb(0, 0, 145); bottom:35%; left:15%;}
-      40%{background-color:rgb(49, 49, 255); bottom:40%; left:10%;}
+      40%{background-color:rgb(108, 226, 255); bottom:40%; left:10%;}
       45%{background-color:rgb(0, 0, 146); bottom:45%; left:15%;}
       50%{background-color:blue; bottom:50%; left:10%;}
-      55%{background-color:rgb(57, 57, 255); bottom:55%; left:15%;}
+      55%{background-color:rgb(131, 247, 255); bottom:55%; left:15%;}
       60%{background-color:blue; bottom:60%; left:10%;}
       65%{background-color:rgb(55, 55, 173); bottom:65%; left:15%;}
-      70%{background-color:blue; bottom:70%; left:10%;}
+      70%{background-color:rgb(120, 217, 255); bottom:70%; left:10%;}
       75%{background-color:rgb(0, 0, 133); bottom:75%; left:15%;}
       80%{background-color:rgb(68, 68, 255); bottom:80%; left:10%;}
-      85%{background-color:blue; bottom:85%; left:15%;}
+      85%{background-color:rgb(142, 251, 255); bottom:85%; left:15%;}
       90%{background-color:rgb(0, 0, 190); bottom:90%; left:10%;}
       95%{background-color:blue; bottom:95%; left:15%;}
-      100%{background-color:rgb(0, 0, 167); bottom:150%; left:10%;}
+      100%{background-color:rgb(134, 251, 255); bottom:150%; left:10%;}
   
   }
 
@@ -279,6 +268,8 @@ a{
   animation-duration: 20s;
   animation-iteration-count: infinite;
   border-radius: 100%;
+  animation-timing-function:linear ;
+  
   
 }
 #div3 {
@@ -292,6 +283,7 @@ a{
   border-radius: 100%;
   left:20%;
   animation-delay: -5s;
+  animation-timing-function:linear ;
   
 }
 
@@ -306,6 +298,7 @@ a{
   border-radius: 100%;
   left:20%;
   animation-delay: -6s;
+  animation-timing-function:linear ;
   
 }
 
@@ -320,6 +313,7 @@ a{
   border-radius: 100%;
   left:20%;
   animation-delay: -9.5s;
+  animation-timing-function:linear ;
   
 }
 
@@ -334,30 +328,31 @@ a{
   border-radius: 100%;
   left:20%;
   animation-delay: -14.5s;
+  animation-timing-function:linear ;
   
 }
 
 @keyframes an2{
   0%{background-color:blue; bottom:-7%; left:30%;}
-  5%{background-color:rgb(0, 0, 185); bottom:5%; left:35%;}
+  5%{background-color:rgb(150, 248, 255); bottom:5%; left:35%;}
   10%{background-color:rgb(39, 39, 146); bottom:10%; left:30%;}
-  15%{background-color:rgb(12, 12, 77); bottom:15%; left:35%;}
+  15%{background-color:rgb(147, 230, 255); bottom:15%; left:35%;}
   20%{background-color:rgb(19, 19, 139); bottom:20%; left:30%;}
   25%{background-color:blue; bottom:25%; left:35%;}
-  30%{background-color:rgb(44, 44, 255); bottom:30%; left:30%;}
+  30%{background-color:rgb(131, 241, 255); bottom:30%; left:30%;}
   35%{background-color:rgb(0, 0, 145); bottom:35%; left:35%;}
   40%{background-color:rgb(49, 49, 255); bottom:40%; left:30%;}
-  45%{background-color:rgb(0, 0, 146); bottom:45%; left:35%;}
+  45%{background-color:rgb(96, 197, 255); bottom:45%; left:35%;}
   50%{background-color:blue; bottom:50%; left:30%;}
   55%{background-color:rgb(57, 57, 255); bottom:55%; left:35%;}
   60%{background-color:blue; bottom:60%; left:30%;}
-  65%{background-color:rgb(55, 55, 173); bottom:65%; left:35%;}
+  65%{background-color:rgb(90, 181, 255); bottom:65%; left:35%;}
   70%{background-color:blue; bottom:70%; left:30%;}
   75%{background-color:rgb(0, 0, 133); bottom:75%; left:35%;}
-  80%{background-color:rgb(68, 68, 255); bottom:80%; left:30%;}
+  80%{background-color:#91ffff; bottom:80%; left:30%;}
   85%{background-color:blue; bottom:85%; left:35%;}
   90%{background-color:rgb(0, 0, 190); bottom:90%; left:30%;}
-  95%{background-color:blue; bottom:95%; left:35%;}
+  95%{background-color:rgb(133, 255, 245); bottom:95%; left:35%;}
   100%{background-color:rgb(0, 0, 167); bottom:150%; left:30%;}
 
 }
@@ -373,6 +368,7 @@ animation-duration: 20s;
 animation-iteration-count: infinite;
 border-radius: 100%;
 animation-delay: -3;
+animation-timing-function:linear ;
 
 }
 #div8 {
@@ -386,6 +382,7 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -6.3s;
+animation-timing-function:linear ;
 
 }
 
@@ -400,6 +397,7 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -7.8s;
+animation-timing-function:linear ;
 
 }
 
@@ -414,6 +412,7 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -9.3s;
+animation-timing-function:linear ;
 
 }
 
@@ -428,32 +427,33 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -18.2s;
+animation-timing-function:linear ;
 
 }
 
 
 @keyframes an3{
-  0%{background-color:blue; bottom:-7%; left:50%;}
+  0%{background-color:rgb(0, 110, 255); bottom:-7%; left:50%;}
   5%{background-color:rgb(0, 0, 185); bottom:5%; left:55%;}
-  10%{background-color:rgb(39, 39, 146); bottom:10%; left:50%;}
-  15%{background-color:rgb(12, 12, 77); bottom:15%; left:55%;}
+  10%{background-color:rgb(90, 181, 255); bottom:10%; left:50%;}
+  15%{background-color:rgb(91, 203, 255); bottom:15%; left:55%;}
   20%{background-color:rgb(19, 19, 139); bottom:20%; left:50%;}
   25%{background-color:blue; bottom:25%; left:55%;}
-  30%{background-color:rgb(44, 44, 255); bottom:30%; left:50%;}
+  30%{background-color:rgb(44, 188, 255); bottom:30%; left:50%;}
   35%{background-color:rgb(0, 0, 145); bottom:35%; left:55%;}
   40%{background-color:rgb(49, 49, 255); bottom:40%; left:50%;}
-  45%{background-color:rgb(0, 0, 146); bottom:45%; left:55%;}
+  45%{background-color:rgb(79, 243, 255); bottom:45%; left:55%;}
   50%{background-color:blue; bottom:50%; left:50%;}
   55%{background-color:rgb(57, 57, 255); bottom:55%; left:55%;}
-  60%{background-color:blue; bottom:60%; left:50%;}
+  60%{background-color:rgb(104, 237, 255); bottom:60%; left:50%;}
   65%{background-color:rgb(55, 55, 173); bottom:65%; left:55%;}
-  70%{background-color:blue; bottom:70%; left:50%;}
+  70%{background-color:rgb(110, 214, 255); bottom:70%; left:50%;}
   75%{background-color:rgb(0, 0, 133); bottom:75%; left:55%;}
   80%{background-color:rgb(68, 68, 255); bottom:80%; left:50%;}
-  85%{background-color:blue; bottom:85%; left:55%;}
+  85%{background-color:rgb(88, 202, 255); bottom:85%; left:55%;}
   90%{background-color:rgb(0, 0, 190); bottom:90%; left:50%;}
   95%{background-color:blue; bottom:95%; left:55%;}
-  100%{background-color:rgb(0, 0, 167); bottom:150%; left:50%;}
+  100%{background-color:rgb(124, 235, 255); bottom:150%; left:50%;}
 
 }
 
@@ -468,6 +468,7 @@ animation-duration: 20s;
 animation-iteration-count: infinite;
 border-radius: 100%;
 animation-delay: -3.4;
+animation-timing-function:linear ;
 
 }
 #div13 {
@@ -481,6 +482,7 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -2.8s;
+animation-timing-function:linear ;
 
 }
 
@@ -495,6 +497,7 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -4.3s;
+animation-timing-function:linear ;
 
 }
 
@@ -509,6 +512,7 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -6.8s;
+animation-timing-function:linear ;
 
 }
 
@@ -523,30 +527,31 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -15.1s;
+animation-timing-function:linear ;
 
 }
 
 @keyframes an4{
   0%{background-color:blue; bottom:-7%; left:70%;}
-  5%{background-color:rgb(0, 0, 185); bottom:5%; left:75%;}
+  5%{background-color:rgb(0, 117, 185); bottom:5%; left:75%;}
   10%{background-color:rgb(39, 39, 146); bottom:10%; left:70%;}
-  15%{background-color:rgb(12, 12, 77); bottom:15%; left:75%;}
-  20%{background-color:rgb(19, 19, 139); bottom:20%; left:70%;}
-  25%{background-color:blue; bottom:25%; left:75%;}
-  30%{background-color:rgb(44, 44, 255); bottom:30%; left:70%;}
-  35%{background-color:rgb(0, 0, 145); bottom:35%; left:75%;}
+  15%{background-color:rgb(18, 0, 61); bottom:15%; left:75%;}
+  20%{background-color:rgb(81, 81, 255); bottom:20%; left:70%;}
+  25%{background-color:rgb(101, 194, 255); bottom:25%; left:75%;}
+  30%{background-color:rgb(0, 0, 145); bottom:30%; left:70%;}
+  35%{background-color:rgb(111, 214, 255); bottom:35%; left:75%;}
   40%{background-color:rgb(49, 49, 255); bottom:40%; left:70%;}
-  45%{background-color:rgb(0, 0, 146); bottom:45%; left:75%;}
-  50%{background-color:blue; bottom:50%; left:50%;}
-  55%{background-color:rgb(57, 57, 255); bottom:55%; left:75%;}
+  45%{background-color:rgb(112, 234, 255); bottom:45%; left:75%;}
+  50%{background-color:blue; bottom:50%; left:70%;}
+  55%{background-color:rgb(57, 110, 255); bottom:55%; left:75%;}
   60%{background-color:blue; bottom:60%; left:70%;}
-  65%{background-color:rgb(55, 55, 173); bottom:65%; left:75%;}
+  65%{background-color:rgb(73, 167, 255); bottom:65%; left:75%;}
   70%{background-color:blue; bottom:70%; left:70%;}
-  75%{background-color:rgb(0, 0, 133); bottom:75%; left:75%;}
+  75%{background-color:rgb(94, 204, 255); bottom:75%; left:75%;}
   80%{background-color:rgb(68, 68, 255); bottom:80%; left:70%;}
-  85%{background-color:blue; bottom:85%; left:75%;}
+  85%{background-color:rgb(86, 201, 255); bottom:85%; left:75%;}
   90%{background-color:rgb(0, 0, 190); bottom:90%; left:70%;}
-  95%{background-color:blue; bottom:95%; left:75%;}
+  95%{background-color:rgb(92, 217, 255); bottom:95%; left:75%;}
   100%{background-color:rgb(0, 0, 167); bottom:150%; left:75%;}
 
 }
@@ -562,6 +567,8 @@ animation-duration: 20s;
 animation-iteration-count: infinite;
 border-radius: 100%;
 animation-delay: -8.9;
+animation-timing-function:linear ;
+
 
 }
 #div18 {
@@ -575,6 +582,8 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -5.2s;
+animation-timing-function:linear ;
+
 
 }
 
@@ -589,6 +598,8 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -4.3s;
+animation-timing-function:linear ;
+
 
 }
 
@@ -603,6 +614,8 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -3.8s;
+animation-timing-function:linear ;
+
 
 }
 
@@ -617,6 +630,8 @@ animation-iteration-count: infinite;
 border-radius: 100%;
 left:20%;
 animation-delay: -13.1s;
+animation-timing-function:linear ;
+
 
 }
 
@@ -631,6 +646,8 @@ animation-delay: -13.1s;
   border-radius: 100%;
   left:20%;
   animation-delay: -17.3s;
+  animation-timing-function:linear ;
+
   
   }
   
@@ -645,7 +662,8 @@ animation-delay: -13.1s;
   border-radius: 100%;
   left:20%;
   animation-delay: -7.8s;
-  
+  animation-timing-function:linear ;
+
   }
   
   #div24 {
@@ -659,28 +677,13 @@ animation-delay: -13.1s;
   border-radius: 100%;
   left:20%;
   animation-delay: -16.1s;
-  
+  animation-timing-function:linear ;
+
   }
   
   
 
-  #profile, #imageDisplay, #profilePicture{
-    position:fixed;
-    top:1%;
-    right: 1%;
-    width: 10%;
-    height:20%;
-    text-align: center;
-    color:rgba(250, 235, 215, 0);
-    border-style: hidden;
-    border-radius: 100%;
-    animation-name: p1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 
-    
-  }
 
   #profile_name{
     position:absolute;
