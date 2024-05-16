@@ -8,21 +8,21 @@
 <body>
     
     <body onload="loadFromLocalStorage()">
-        <textarea id="userinfo" rows="10" cols="40" name="User Info" spellcheck="true"></textarea>
+        <textarea id="help" rows="10" cols="40" name="User Info" spellcheck="true"></textarea>
         <button id="help" onclick="saveLocally()">Save</button>
     
         <script>
             function saveLocally() {
-                var input = document.getElementById("userinfo");
+                var input = document.getElementById("help");
                 var textData = input.value;
-                localStorage.setItem('userinfo', textData);
+                localStorage.setItem('help', textData);
                 console.log('Text stored in local storage.');
             }
     
             function loadFromLocalStorage() {
-                var textData = localStorage.getItem('userinfo');
+                var textData = localStorage.getItem('help');
                 if (textData) {
-                    document.getElementById('userinfo').value = textData;
+                    document.getElementById('help').value = textData;
                     console.log('Text loaded from local storage.');
                 } else {
                     console.log('No text data found in local storage.');
